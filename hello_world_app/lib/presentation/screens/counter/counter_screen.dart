@@ -13,7 +13,7 @@ class _CounterScreenState extends State<CounterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Counter App By Ubiqus"),
+        title: const Text("Counter App By Ubiqus"),
         backgroundColor: Colors.amber,
       ),
       body: Center(
@@ -22,11 +22,14 @@ class _CounterScreenState extends State<CounterScreen> {
           children: [
             Text(
               '$clickCounter',
-              style: TextStyle(fontSize: 160, fontWeight: FontWeight.w100),
+              style: const TextStyle(
+                fontSize: 160,
+                fontWeight: FontWeight.w100,
+              ),
             ),
             Text(
               clickCounter == 1 ? "click" : "clicks",
-              style: TextStyle(fontSize: 25),
+              style: const TextStyle(fontSize: 25),
             ),
           ],
         ),
